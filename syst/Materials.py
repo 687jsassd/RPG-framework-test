@@ -1,0 +1,26 @@
+from syst.init_pkg import *
+#self,name="未知材料",compatibilities={'A':0,'B':0,'C':0},density=1,bonuses={},spe_effects={}
+m_Iron=Material(name="铁",
+              compatibilities={'A':3,'B':1,'C':0},
+              density=7,
+              bonuses={'atk*':0.1,'def*':0.1,'spd*':-0.15,'atk':16,'def':11,'spd':-7,'crit':0.1},
+              spe_effects={},
+              material_id=1,
+              quality=0
+              )
+m_Copper=Material(name="铜",
+              compatibilities={'A':1,'B':3,'C':0},
+              density=6,
+              bonuses={'atk*':0.05,'def*':0.05,'spd*':-0.1,'atk':10,'def':8,'spd':-3},
+              resistance_bonuses={'poison':0.1},
+              spe_effects={0.7:2},
+              material_id=2
+              )
+m_Life_essence=Material(name="生命精华",
+              compatibilities={'A':-1,'B':0,'C':3},
+              density=1.2,
+              bonuses={'atk*':-0.2,'def*':-0.2,'spd*':0.05,'max_hp':50,'max_hp*':0.3,'hp_heal':12,'hp_heal*':0.25,'atk':-7,'def':-5,'lck':1},
+              spe_effects={},
+              material_id=3,
+              quality=8
+              )

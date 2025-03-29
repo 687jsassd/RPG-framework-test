@@ -4,15 +4,6 @@ from syst.init_pkg import *
 #如不加入,则按照物品名称的字典序排序
 #改变常量表请在CONSTANT_LIST.py中修改
 
-#加入新装备类型后,需要同时在core的Character类中修改self.equipped属性
-#以及添加以下相关的更新方法
-#    @property
-#    def accessory(self):
-#        if self.equipped['accessory'] is None:
-#            return Equipment()
-#        return self.equipped['accessory']
-#
-#以及修改get_cur_equipment(self)方法
 
 
 class Weapon(Equipment):

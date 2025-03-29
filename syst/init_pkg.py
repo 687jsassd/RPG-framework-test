@@ -669,6 +669,7 @@ class No_item(Item):
         :return: 始终返回-1
         """
         return -1
+
 #FIXME:装备子基类,作为Weapon,Armor等子类的基类
 class Equipment(Item):
     """

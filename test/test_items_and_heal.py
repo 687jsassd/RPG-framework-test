@@ -454,7 +454,7 @@ def run_all_tests():
     test_speed()
 
 #cProfile.run('run_all_tests()')
-test_repair()
+#test_repair()
 print(f"{GREEN}All Success!{RESET}\n")
 end_time = time.time()  # 结束计时
 current, peak = tracemalloc.get_traced_memory()  # 获取当前和峰值内存使用情况

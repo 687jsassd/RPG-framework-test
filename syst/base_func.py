@@ -70,4 +70,3 @@ def delete_object(obj):
 def create_new_reference(obj, new_name):
     globals()[new_name] = obj
 
-#选择单的显示
